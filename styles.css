@@ -1,0 +1,743 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Roboto", sans-serif;
+}
+
+
+:root{
+    --lightBlue: #81b0cc;
+    --blue: #1a71a4;
+    --blueHover: #155d83;
+    --blueActive: #104866;
+    --yellowWhite: #eeeee6;
+
+}
+
+body{
+    overflow-x: hidden;
+}
+
+button{
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+}
+
+a{ 
+    font-family: "Roboto", sans-serif;
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+/* Dividors */
+
+.dividors{
+    position: relative;
+}
+
+
+/* First Dividor */
+
+.custom-shape-divider-top-1728155051 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1728155051 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 22px;
+}
+
+.custom-shape-divider-top-1728155051 .shape-fill {
+    fill: #81B0CC;
+}
+/* Header */
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: var(--lightBlue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img{
+    width: 70px;
+}
+
+nav div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+
+nav a:hover{
+    background-color: var(--blueHover);
+
+}
+
+nav a:active{
+    background-color: var(--blueActive);
+}
+
+nav div a{
+    text-decoration: none;
+    color: white;
+    background-color: var(--blue);
+    padding: 10px 24px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+
+    transition: all 0.2s;
+
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Page 1*/
+
+.page-1{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    min-height: 90vh;
+    background-image: 
+        linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+        url(Files/Images/DALL·E\ 2024-10-27\ 14.03.11\ -\ A\ calming\ and\ professional\ background\ image\ suitable\ for\ the\ homepage\ of\ a\ youth-led\ nonprofit\,\ Youth\ Medical\ Alliance\ Associations\ \(YMAA\).\ The\ settin.webp)
+    ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: white;
+}
+.page-1-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+
+}
+
+.page-1-top h1{
+    font-size: 4rem;
+    text-align: center;
+}
+.page-1-top h2{
+    font-size: 1.4rem;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+
+    font-weight: 500;
+}
+
+
+.page-1-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 50px;
+}
+
+
+.page-1-bottom h3{
+    font-size: 2.3rem;
+    padding: 20px;
+}
+
+
+.page-1-btns{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+}
+
+.page-1 button{
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    font-size: 1.2rem;
+    color: white;
+    
+    border: none;
+    outline: none;
+
+    font-family: 'Roboto', sans-serif;
+
+    padding: 15px 50px;
+
+
+    font-weight: 700;
+
+}
+
+
+
+.page-1-btns a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 700;
+}
+
+.donateBtn{
+    background-color: var(--blue);
+}
+
+.donateBtn:hover{
+    background-color: var(--blueHover);
+}
+
+.donateBtn:active{
+    background-color: var(--blueActive);
+}
+
+.aboutusBtn{
+    background-color: var(--lightBlue);
+}
+
+.aboutusBtn:hover{
+    background-color: var(--blue);
+}
+.aboutusBtn:active{
+    background-color: var(--blueHover);
+}
+
+
+
+
+.supportedBy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--lightBlue);
+    padding-top: 10px;
+
+    gap: 20px;
+}
+
+.supportedBy h3{
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+.supportedByLogo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+
+}
+
+
+.supporter1, .supporter3{
+    height: 90px;
+    opacity: 0.5;
+}
+.supporter2{
+    height: 60px;
+    opacity: 0.5;
+}
+
+
+/* Page 2 */
+
+.page-2{
+    padding-top: 100px;
+    background-color: var(--yellowWhite);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.page-2 h2{
+    font-size: 2.2rem;
+    align-self: flex-start;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.page-2-more{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.page-2 h3{
+    font-size: 2rem;
+}
+
+.page-2-inner{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    gap: 12vw;
+
+    flex-wrap: wrap;
+}
+
+.page-2-inner-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cprImage{
+    width: 70%;
+}
+
+.cprDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    gap: 30px;
+}
+.cprDetails img{
+    width: 60px;
+}
+.cprDetailIndividual{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 10px;
+    font-size: 1.2rem;
+
+    font-weight: 600;
+
+}
+
+.page-2-btns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.page-2-btns button{
+    font-size: 1.2rem;
+    background-color: none;
+    outline: none;
+    border: none;
+
+    transition: all 0.2s;
+
+    padding: 10px 20px;
+
+    color: white;
+
+    border-radius: 5px;
+    font-weight: 700;
+
+}
+
+
+.signUpBtn{
+    background-color: var(--blue);
+}
+
+.signUpBtn:hover{
+    background-color: var(--blueActive);
+
+}
+.signUpBtn:active{
+    background-color: var(--blueHover);
+}
+
+
+
+.moreInfoBtn{
+    background-color: var(--lightBlue);
+}
+
+.moreInfoBtn:hover{
+    background-color: var(--blue);
+}
+.moreInfoBtn:active{
+    background-color: var(--blueHover);
+}
+
+
+
+
+
+
+/* Page 3 */
+
+.page-3{
+    background-color: #1a71a4;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.page-3-more{
+    width: 60vw;
+    padding: 50px;
+
+    background-color: white;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    color: black;
+
+    
+}
+
+.page-3-more h2{
+    font-size: 4vw;
+    align-self: flex-start;
+}
+
+.page-3-bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-3-bottom img{
+    width: 20vw;
+    border-radius: 50%;
+}
+
+.page-3-bottom p{
+    font-size: 1.8vw;
+}
+
+/* Page 4 */
+
+.page-4{
+    background-color:var(--blue);
+    padding-bottom: 200px;
+}
+.page-4-container{
+    width: 90%;
+    margin: 0 auto;
+
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+
+
+.page-4 h2{
+    color: white;
+    border-bottom: 3px red solid;
+    width: fit-content;
+
+    font-size: 3rem;
+}
+
+.page-4-bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+
+    color: white;
+}
+.page-4-bottom-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    gap: 30px;
+
+    padding-right: 20px;
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
+
+
+    flex: 1;
+
+    line-height: 2;
+    letter-spacing: 0.8px;
+
+    
+}
+.page-4-bottom-inner div{
+    all: unset;
+    width: 50px;
+    height: 50px;
+
+    background-color: white;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2rem;
+    color: var(--blue);
+
+    font-weight: 700;
+}
+
+.page-4-bottom-inner h4{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.page-4-bottom-inner img{
+    width: 150px;
+    border-radius: 75px;
+}
+
+
+.page-4-bottom-inner p{
+    font-weight: 500;
+    font-size: 1.2rem;
+
+}
+
+/* Page 5 */
+
+.page-5{
+    width: 100vw;
+    padding: 100px;
+
+    background-color: var(--yellowWhite);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-5 h2{
+    font-size: 3rem;
+}
+
+.page-5 h4{
+    font-size: 1.5rem;
+    margin: 10px 0px 50px 0px;
+    text-decoration: underline;
+}
+
+
+
+.donate-page{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.donate-page div{
+    width: 400px;
+    height: 500px;
+
+    background-color: var(--blue);
+}
+
+
+/* Footer page */
+
+footer{
+    background-color: var(--lightBlue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 50px;
+
+    gap: 30px;
+}
+.footerMain{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 95%;
+}
+
+.footer-top{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    gap: 20px;
+        
+}
+
+
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+
+    width: 300px;
+}
+
+.formButton{
+    width: 100%;
+    padding: 10px 20px;
+
+    background-color: var(--blue);
+    color: white;
+
+    outline: none;
+    border: none;
+
+    font-size: 1.2rem;
+
+    border-radius: 5px;
+}
+
+.formButton:hover{
+    background-color: var(--blueHover);
+}
+
+.formButton:active{
+    background-color: var(--blueActive);
+}
+
+
+.formInputs{
+    outline: none;
+    border: none;
+    padding: 10px 40px 10px 5px;
+    
+    width: 100%;
+
+}
+
+textarea{
+    max-width: 100%;
+    min-width: 100%;
+
+    min-height: 100px;
+    max-height: 100px;
+}
+
+
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.socialMedia{
+    text-decoration: none;
+    color: #e1306c;
+    font-size: 3rem;
+}
+
+.joinTheTeam{
+    outline: none;
+    border: none;
+    background-color: var(--blue);
+    padding: 12px 18px;
+    font-size: 1.2rem;
+
+    border-radius: 5px;
+
+    font-weight: 700;
+    color: white;
+}
+
+
+.formButton:hover{
+    background-color: var(--blueHover);
+}
+
+.formButton:active{
+    background-color: var(--blueActive);
+}
+
+
+.footer-bottom{
+    height: 50px;
+    width: 100vw;
+    background-color: #d3d3d3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: lighter;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: 30px;
+
+    color: rgba(0, 0, 0, 0.671);
+    font-weight: 500;
+}
+
+
+.Webspansion{
+    border-bottom: 2px solid var(--blue);
+    color: var(--blue);
+}
