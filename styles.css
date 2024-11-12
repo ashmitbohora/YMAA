@@ -1,10 +1,11 @@
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
     font-family: "Roboto", sans-serif;
+
+    scroll-behavior: smooth;
 }
 
 
@@ -19,6 +20,7 @@
 
 body{
     overflow-x: hidden;
+
 }
 
 button{
@@ -135,6 +137,8 @@ nav div a{
     background-size: cover;
 
     color: white;
+
+    gap: 40px;
 }
 .page-1-top{
     display: flex;
@@ -160,13 +164,15 @@ nav div a{
 }
 
 
+.heartbeatImage{
+    width: 100%;
+}
+
 .page-1-bottom{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    padding-top: 50px;
 }
 
 
@@ -412,7 +418,7 @@ nav div a{
 
 .page-3{
     background-color: #1a71a4;
-    min-height: 100vh;
+    padding: 200px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -462,7 +468,7 @@ nav div a{
 /* Page 4 */
 
 .page-4{
-    background-color:var(--blue);
+    background-color:var(--blueHover);
     padding-bottom: 200px;
 }
 .page-4-container{
@@ -477,6 +483,8 @@ nav div a{
     
     flex-wrap: wrap;
     gap: 100px;
+
+
 }
 
 
@@ -500,7 +508,7 @@ nav div a{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: top;
 
     gap: 30px;
 
@@ -541,6 +549,7 @@ nav div a{
 .page-4-bottom-inner img{
     width: 150px;
     border-radius: 75px;
+    margin: auto 0 0 0;
 }
 
 
@@ -562,6 +571,8 @@ nav div a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    text-align: center;
 }
 
 .page-5 h2{
@@ -586,12 +597,159 @@ nav div a{
     gap: 40px;
 }
 
-.donate-page div{
+
+
+
+
+
+
+.donate-1, .donate-2{
     width: 400px;
     height: 500px;
 
     background-color: var(--blue);
+
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
 }
+
+
+.donate-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.donate-1-g1{
+    width: 90%;
+    margin: 0 auto;
+
+    
+
+}
+
+.priceGoal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    color: white;
+    padding-bottom: 10px;
+
+}
+.priceProgress{
+    background-color: lightgray;
+    width: 100%;
+    height: 20px;
+    border-radius: 30px;
+}
+
+.paymentFrequency{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.paymentFrequency p{
+    padding: 20px;
+    text-align: center;
+
+
+
+}
+
+.paymentFrequency .one{
+    background-color: #81B0CC;
+
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.paymentFrequency .two{
+    background-color: #D9D9D9;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.paymentPlans{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+}
+.paymentPlan{
+    padding: 20px 30px;
+    background-color: #D9D9D9;
+    border-radius: 30px;
+}
+
+.customAmount{
+    color: white;
+    border-bottom: 5px solid white;
+
+    font-size: 1.5rem;
+}
+
+.donateButton{
+    background-color: #81B0CC;
+    padding: 20px 50px;
+    border-radius: 45px;
+}
+
+
+
+
+.donate-2 h1{
+    color: white;
+    font-size: 2rem;
+
+    padding: 20px;
+}
+
+.donorWall{
+    height: 20%;
+    width: 80%;
+    margin: 20px auto;
+
+    background-color: #81B0CC;
+
+    position: relative;
+
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.donorWallPrice{
+    width: 40px;
+    height: 30px;
+    background-color: #1A71A4;
+    border-radius: 40px;
+
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Footer page */
@@ -614,6 +772,8 @@ footer{
     justify-content: space-between;
 
     width: 95%;
+
+    flex-wrap: wrap;
 }
 
 .footer-top{
@@ -719,7 +879,6 @@ textarea{
 
 
 .footer-bottom{
-    height: 50px;
     width: 100vw;
     background-color: #d3d3d3;
     display: flex;
@@ -730,14 +889,164 @@ textarea{
     font-weight: lighter;
     font-size: 1rem;
     letter-spacing: 1px;
-    padding: 30px;
+    padding: 20px;
 
     color: rgba(0, 0, 0, 0.671);
     font-weight: 500;
+
+
+    text-align: center;
 }
 
 
 .Webspansion{
     border-bottom: 2px solid var(--blue);
     color: var(--blue);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1200px){
+    .page-3-more{
+        width: 80%;
+    }
+    .page-3-bottom p{
+        width: 60%;
+        margin: 0 auto 0 0;
+        font-size: 1.3rem;
+    }
+
+    .page-3-more h2{
+        font-size: 2rem;
+    }
+}
+
+
+
+@media (max-width:768px){
+
+    .page-1-top h1{
+        font-size: 2.5rem;
+    }
+    .page-1-top h2{
+        font-size: 1.2rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .page-3-more{
+        width: 85%;
+    }
+    .page-3-bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        gap: 50px;
+    }
+
+    .page-3-bottom p{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .page-3-more h2{
+        width: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .page-3-bottom img{
+        width: 200px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .page-4-bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .pg-4-1{
+        border-right: 0px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+        padding-bottom: 40px;
+    }
+    
+
+
+
+
+
+    .footer-top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footerMain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        gap: 50px;
+
+        padding: 20px;
+    }
+    
 }
