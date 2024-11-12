@@ -20,10 +20,16 @@
     <header>
         <nav>
             <img src="Files/Images/ymaaLogo.webp" alt="YMAA's Logo">
-            <div>
+            <div class="navDesktop">
                 <a href="#donatePage"><p>Donate Now</p></a>
                 <a href="#missionPage"><p>About Us</p></a>
             </div>  
+            <div class="navMobile active">
+                <a href="#donatePage"><p>Donate Now</p></a>
+                <a href="#missionPage"><p>About Us</p></a>
+            </div>
+            <i class="fa-solid fa-xmark navBtn active"></i>
+            <i class="fa-solid fa-bars navBtn"></i>
         </nav>
     </header>
     <main>
@@ -213,5 +219,8 @@
             </p>
         </div>
     </footer>
+
+
+    <script src="scripts.js"></script>
 </body>
 </html>
