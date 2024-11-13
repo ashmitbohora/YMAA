@@ -203,10 +203,14 @@
                     </a>
                 </div>
             </div>
-            <form id="contactPage" action="" class="footer-right">
+            <form id="contactPage" action="https://api.web3forms.com/submit" method="POST" class="footer-right">
+
+                <input type="hidden" name="access_key" value="c7529368-caa3-4ff5-b2c3-458ccb22ba6a">
+                
                 <input class="formInputs" type="text" name="name" placeholder="Your Name" required> 
                 <input class="formInputs" type="email" name="email" placeholder="Your Email" required>
                 <textarea class="formInputs" name="message" id="" placeholder="Your Message" required></textarea> 
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
                 <button class="formButton">Submit</button>
             </form>
         </div>
