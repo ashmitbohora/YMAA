@@ -18,10 +18,14 @@
 
 }
 
-body{
-    overflow-x: hidden;
+html{
     width: 100%;
+    overflow-x: hidden !important;
+}
 
+body{
+    width: 100%;
+    overflow-x: hidden !important;
 }
 
 button{
@@ -321,6 +325,11 @@ nav div a{
     align-items: center;
     justify-content: center;
     gap: 40px;
+
+
+    
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .page-2 h3{
@@ -335,6 +344,7 @@ nav div a{
     gap: 12vw;
 
     flex-wrap: wrap;
+
 }
 
 .page-2-inner-top{
@@ -610,6 +620,9 @@ nav div a{
 
     flex-wrap: wrap;
     gap: 40px;
+
+    width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -796,10 +809,11 @@ footer{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-
     gap: 20px;
-        
+    text-align: center;
 }
+
+
 
 
 .footer-right{
@@ -1061,6 +1075,22 @@ textarea{
 
 
 
+    .supportedBy h3{
+        font-size: 1.5rem;
+    }
+
+    .supportedByLogo{
+
+        padding: 0px 20px;
+        width: 100%;
+
+        justify-content: center;
+    }
+    .supportedByLogo img{
+        scale: 0.6;
+        
+    }
+
 
 
 
@@ -1224,7 +1254,10 @@ textarea{
         width: 100%;
     }
 
-
+    .supportedByLogo img{
+        height: 50px;
+        align-self: flex-end;
+    }
 
 
     .cprDetailIndividual p{
@@ -1244,10 +1277,26 @@ textarea{
     .donate-page{
         gap: 30px;
     }
+
+    .footer-top h2{
+        font-size: 1.5rem;
+    }
+
+    .footerMain{
+        padding: 0;
+    }
 }
 
 
 @media (max-width: 350px){
+
+
+    .supportedByLogo img{
+        height: 40px;
+        align-self: flex-end;
+    }
+
+
     .page-2-btns{
         display: flex;
         flex-direction: column-reverse;
@@ -1258,6 +1307,17 @@ textarea{
         width: 100%;
         
     }
+
+    .page-2 h2{
+        font-size: 1.6rem;
+    }
+    .page-2 h3{
+        font-size: 1.2rem;
+    }
+
+
+
+
     .signUpBtn{
         width: 100%;
     }
