@@ -123,6 +123,11 @@ nav div a{
     letter-spacing: 1px;
 }
 
+
+.navBtn::before, .navBtn{
+    display: none;
+}
+
 /* Page 1*/
 
 .page-1{
@@ -297,6 +302,9 @@ nav div a{
     justify-content: center;
     align-items: center;
     padding-bottom: 100px;
+
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .page-2 h2{
@@ -345,6 +353,8 @@ nav div a{
     justify-content: center;
 
     gap: 30px;
+
+
 }
 .cprDetails img{
     width: 60px;
@@ -971,6 +981,9 @@ textarea{
         overflow-x: hidden;
     }
 
+    .navBtn::before, .navBtn{
+        display: block;
+    }
 
     .navBtn{
         display: block;
@@ -982,6 +995,9 @@ textarea{
         transition: all 0.2s ease-in-out;
 
         opacity: 1;
+
+        font-size: 1.5rem;
+        color: white;
     }
 
     .navBtn.active{
@@ -993,6 +1009,12 @@ textarea{
         display: block;
         font-size: 2rem;
         color: white;
+    }
+
+        
+    .navMobile.active{
+        display: flex;
+        opacity: 1;
     }
 
     .navMobile{
@@ -1014,19 +1036,15 @@ textarea{
         right: 20px;
         top: 80px;
 
-        transition: all 0.5s ease-in-out;
-
         z-index: 99;
+        opacity: 0;
 
-        opacity: 1;
 
 
+        transition: opacity 0.5s;
     }
 
-    
-    .navMobile.active{
-        opacity: 0; 
-    }
+
 
     
     .navMobile a{
@@ -1070,6 +1088,7 @@ textarea{
 
     .page-3-more{
         width: 85%;
+        padding: 50px 20px;
     }
     .page-3-bottom{
         display: flex;
@@ -1081,7 +1100,7 @@ textarea{
     }
 
     .page-3-bottom p{
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
         text-align: center;
     }
@@ -1125,8 +1144,15 @@ textarea{
     }
     
 
-
-
+    .page-5 h2{
+        font-size: 2rem;
+    }
+    .page-5 a{
+        font-size: 1.5rem;
+    }
+    .page-5{
+        padding: 100px 20px;
+    }
 
 
     .footer-top{
@@ -1152,5 +1178,94 @@ textarea{
 
 
 @media (max-width: 600px){
-    
+    .page-3-bottom p{
+        width: 100%;
+    }
+
+
+
+
+
+    .page-2 h2{
+        font-size: 2rem;
+        padding-bottom: 100px;
+    }
+
+    .page-2 h3{
+        font-size: 1.5rem;
+
+    }
+
+    .cprImage{
+        width: 65vw;
+    }
+    .cprDetails{
+        scale: 0.9;
+        width: 50%;
+    }
+
+}
+
+
+
+@media (max-width: 450px){
+
+    .page-1-btns{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+
+        gap: 10px;
+
+    }
+
+    .page-1-bottom button{
+        width: 100%;
+    }
+
+
+
+
+    .cprDetailIndividual p{
+        width: 80%;
+        text-wrap: wrap;
+    } 
+    .cprDetailIndividual{
+        text-align: left;
+    }
+
+
+
+    .donate-1, .donate-2{
+        scale: 0.8;
+    }
+
+    .donate-page{
+        gap: 30px;
+    }
+}
+
+
+@media (max-width: 350px){
+    .page-2-btns{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        width: 100%;
+        
+    }
+    .signUpBtn{
+        width: 100%;
+    }
+
+    .donate-1, .donate-2{
+        scale: 0.7;
+    }
+    .donate-page{
+        gap: 15px;
+    }
 }
