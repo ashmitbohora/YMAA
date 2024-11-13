@@ -880,7 +880,7 @@ textarea{
 
 .socialMedia{
     text-decoration: none;
-    color: #e1306c;
+    color: var(--blue);
     font-size: 3rem;
 }
 
