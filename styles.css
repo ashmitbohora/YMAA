@@ -142,15 +142,17 @@ nav div a{
     min-height: 90vh;
     background-image: 
         linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-        url(Files/Images/cprEvent/offierImages.webp)
+        url(Files/Images/cprEvent/cprEventPicture_1.webp)
     ;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 
     color: white;
 
     gap: 40px;
     padding: 40px;
+    padding-bottom: 50px;
 }
 .page-1-top{
     display: flex;
@@ -338,19 +340,88 @@ nav div a{
     flex-direction: row;
     align-content: center;
     justify-content: center;
-    gap: 12vw;
+    gap: 100px;
 
     flex-wrap: wrap;
 
 }
 
+
 .page-2-inner-top{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: center;
+
+    gap: 5px;
 }
-.cprImage{
-    width: 70%;
+
+.sliderContainer{
+    width: 550px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    background-color: lightgray;
+
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    border: 5px solid var(--blue);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    position: relative;
+    
+
+}
+
+.sliderContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.sliderContainer img{
+    min-width: 100%;
+    height: auto;
+    object-fit: cover;
+
+    scroll-snap-align: start;
+}
+
+.sliderButtons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+
+    bottom: 100%;
+    right: 0;
+}
+
+.sliderButtons i{
+    background-color: var(--blue);
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: all 0.2s;
+}
+
+.sliderButtons i:hover{
+    background-color: var(--blueHover);
+    
+}
+
+.sliderButtons i:active{
+    background-color: var(--blueActive);
+
 }
 
 .cprDetails{
@@ -421,11 +492,11 @@ nav div a{
 
 
 .moreInfoBtn{
-    background-color: var(--lightBlue);
+    background-color: var(--blueHover);
 }
 
 .moreInfoBtn:hover{
-    background-color: var(--blue);
+    background-color: var(--blueActive);
 }
 .moreInfoBtn:active{
     background-color: var(--blueHover);
@@ -1221,10 +1292,6 @@ textarea{
     .page-2 h3{
         font-size: 1.5rem;
 
-    }
-
-    .cprImage{
-        width: 65vw;
     }
     .cprDetails{
         scale: 0.9;
