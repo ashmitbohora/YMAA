@@ -159,17 +159,16 @@ nav div a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 5px;
 }
 
 .page-1-top h1{
-    font-size: 4rem;
+    font-size: 3.7rem;
     text-align: center;
-    padding: 0 20px;
 }
 .page-1-top h2{
-    font-size: 1.4rem;
-    width: 75%;
+    font-size: 1.2rem;
+    width: 60%;
     margin: 0 auto;
     text-align: center;
 
@@ -329,6 +328,8 @@ nav div a{
     
     width: 100%;
     overflow-x: hidden;
+
+    padding: 10px 20px;
 }
 
 .page-2 h3{
@@ -670,12 +671,14 @@ nav div a{
 
 .page-5 h2{
     font-size: 3rem;
+    text-align: left;
 }
 
 .page-5 h4{
     font-size: 1.5rem;
     margin: 10px 0px 50px 0px;
     text-decoration: underline;
+    text-align: left;
 }
 
 
@@ -689,7 +692,6 @@ nav div a{
     flex-wrap: wrap;
     gap: 40px;
 
-    width: 100%;
     overflow-x: hidden;
 }
 
@@ -878,7 +880,7 @@ footer{
     align-items: flex-start;
     justify-content: center;
     gap: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 
@@ -941,9 +943,11 @@ textarea{
 .socials{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     gap: 20px;
+    
+    flex-wrap: wrap;
 }
 
 .socialMedia{
@@ -1033,7 +1037,18 @@ textarea{
 
 
 
-@media (max-width:1200px){
+@media (max-width: 1200px){
+
+    .page-1-top h1{
+        font-size: 3rem;
+    }
+    .page-1-top h2{
+        font-size: 1.2rem;
+    }
+
+
+
+
     .page-3-more{
         width: 80%;
     }
@@ -1163,13 +1178,16 @@ textarea{
 
 
 
-
+    .page-1{
+        padding: 40px 20px;
+    }
 
     .page-1-top h1{
         font-size: 2.5rem;
     }
     .page-1-top h2{
         font-size: 1.2rem;
+        width: 75%;
     }
 
 
@@ -1186,7 +1204,7 @@ textarea{
 
     .page-3-more{
         width: 85%;
-        padding: 50px 20px;
+        padding: 50px 30px;
     }
     .page-3-bottom{
         display: flex;
@@ -1199,13 +1217,11 @@ textarea{
 
     .page-3-bottom p{
         width: 90%;
-        margin: 0 auto;
-        text-align: center;
+
     }
 
     .page-3-more h2{
         width: 100%;
-        text-align: center;
         padding-bottom: 20px;
     }
     .page-3-bottom img{
@@ -1256,7 +1272,7 @@ textarea{
     .footer-top{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
     }
 
@@ -1295,14 +1311,9 @@ textarea{
     }
     .cprDetails{
         scale: 0.9;
-        width: 50%;
     }
 
-}
 
-
-
-@media (max-width: 450px){
 
     .page-1-btns{
         display: flex;
@@ -1312,9 +1323,87 @@ textarea{
 
         gap: 10px;
 
+        width: 100%;
+
     }
 
-    .page-1-bottom button{
+    .page-1-btns button{
+        width: 100%;
+    }
+
+
+
+    .sliderContainer{
+        width: 90vw;
+    }
+
+    .page-2-inner{
+        gap: 25px;
+    }
+
+    .page-2-btns{
+        width: 100%;
+    }
+
+    .page-2-btns a{
+        width: 100%;
+    }
+    .page-2-btns button{
+        width: 100%;
+    }
+
+
+
+    .page-4-container{
+        gap: 50px;
+    }
+
+    .page-4-bottom-inner{
+        gap: 15px;
+    }
+
+
+    .page-4 h2{
+        font-size: clamp(2rem, 10vw, 3rem);
+    }
+    .page-4 h4{
+        font-size: clamp(1.5rem, 5vw, 2rem);
+    }
+    .page-4 p{
+        font-size: clamp(1rem, 4vw, 1.2rem);
+    }
+
+
+    .footer-right{
+        width: 90vw;
+    }
+
+}
+
+
+
+@media (max-width: 450px){
+
+
+    .page-1-top h1{
+        font-size: 2rem;
+        text-align: left;
+    }
+    .page-1-top h2{
+        font-size: 0.8rem;
+        width: 100%;
+        text-align: left;
+    }   
+    .page-1-bottom{
+        width: 100%;
+    }
+    .page-1-btns{
+        scale: 0.8;
+        width: 110%;
+
+    }
+
+    .page-1-btns button{
         width: 100%;
     }
 
