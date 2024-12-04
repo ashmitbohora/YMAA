@@ -358,7 +358,7 @@ nav div a{
 }
 
 .sliderContainer{
-    width: 550px;
+    width: 600px;
     height: auto;
     aspect-ratio: 16 / 9;
     background-color: lightgray;
@@ -436,7 +436,7 @@ nav div a{
 
 }
 .cprDetails img{
-    width: 60px;
+    width: 50px;
 }
 .cprDetailIndividual{
     display: flex;
@@ -1286,6 +1286,11 @@ textarea{
 
         padding: 20px;
     }
+
+
+    .sliderContainer{
+        width: 90vw;
+    }
     
 }
 
@@ -1333,9 +1338,7 @@ textarea{
 
 
 
-    .sliderContainer{
-        width: 90vw;
-    }
+
 
     .page-2-inner{
         gap: 25px;
